@@ -1,5 +1,3 @@
-require 'pry'
-
 namespace :anime_items do
   desc "Fetch anime"
   task fetch: :environment do
