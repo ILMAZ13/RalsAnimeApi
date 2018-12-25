@@ -1,3 +1,4 @@
+require 'net/http'
 namespace :anime_items do
   desc "Fetch anime"
   task fetch: :environment do
