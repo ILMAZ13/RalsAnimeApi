@@ -4,6 +4,10 @@ class AnimeRestController < ApplicationController
   end
 
   def anime_items_collection
-    Anime.where("LOWER(name) ILIKE '%#{params[:query].downcase}%'")
+    if params[:query].present?
+      Anime.where("LOWER(name) ILIKE '%#{params[:query].downcase}%'")
+    else
+      Anime.all
+    end
   end
 end
