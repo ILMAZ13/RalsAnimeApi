@@ -49,3 +49,4 @@ gem 'rails_admin', '~> 1.3'
 gem 'bcrypt'
 gem 'jsonapi-resources'
 gem 'graphql'
+gem 'rails_12factor', group: :production
